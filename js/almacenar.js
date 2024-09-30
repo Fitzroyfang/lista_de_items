@@ -37,6 +37,13 @@ bot_agregar.addEventListener('click',function(e) {
     }
 })
 
+item.addEventListener('keydown', function(e){
+    if (e.key === "Enter"){
+        agregarDatos();
+        mostrarDatos();
+    }
+})
+
 bot_limpiar.addEventListener('click', function(e){
     localStorage.clear();
     location.reload();
